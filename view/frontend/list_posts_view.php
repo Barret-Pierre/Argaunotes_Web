@@ -9,9 +9,13 @@ ob_start();
     <!-- New member form -->
     <h2>Ajouter un(e) Argonaute</h2>
     <form class="new-member-form" action="index.php?action=addMember" method="POST">
-        <label for="name_member">Nom de l&apos;Argonaute</label>
-        <input id="name_member" name="name_member" type="text" placeholder="Charalampos" required/>
-        <button type="submit">Envoyer</button>
+        <div class="col-12">
+            <label for="name_member" class="form-label">Nom de l&apos;Argonaute</label>
+        </div>
+        <div class="col-auto d-flex gap-3">
+            <input id="name_member" name="name_member" type="text" placeholder="Charalampos" class="form-control" required />
+            <button type="submit" class="btn btn-primary">Ajouter</button>  
+        </div>
     </form>
 
     <!-- Member list -->
@@ -24,7 +28,7 @@ ob_start();
         } // Fin de la boucle des billets
         $members->closeCursor();
         ?>
-
+        
     </section>
 </main>
 

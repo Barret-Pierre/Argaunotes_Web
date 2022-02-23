@@ -18,11 +18,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `wild_test`
+-- Database: `heroku_b77ab840f797fc3`
 --
-
-CREATE DATABASE `wild_test`;
-USE `wild_test`;
 
 -- --------------------------------------------------------
 

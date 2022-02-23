@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 -- Database: `wild_test`
 --
 
+CREATE DATABASE `wild_test`;
+USE `wild_test`;
+
 -- --------------------------------------------------------
 
 --

@@ -7,7 +7,7 @@ class Manager {
     protected function dbConnect()
     {
         // Ici l'utilisation de namespace oblige à mettre un \ devant PDO car la classe PDO se trouve à la racine du dossier 
-        $db = new \PDO('mysql://bb210a9e77eb4b:2cf80422@eu-cdbr-west-02.cleardb.net/heroku_b77ab840f797fc3?reconnect=true');
+        $db = new \PDO('mysql:host=eu-cdbr-west-02.cleardb.net;dbname=heroku_b77ab840f797fc3;charset=utf8', 'bb210a9e77eb4b', '2cf80422');
         return $db;
     }
 } 

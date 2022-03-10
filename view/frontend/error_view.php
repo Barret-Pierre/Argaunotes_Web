@@ -5,9 +5,10 @@ ob_start();
 
 
 <!-- Faire un visuel d'erreur -->
-
-<div class="danger">
-    <p><?= 'Erreur :' . $errorMessage;?></p>
+<div class="container">
+    <div class="alert alert-danger">
+        <p><?= 'Erreur: ' . $errorMessage;?></p>
+    </div>
 </div>
 
 

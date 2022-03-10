@@ -10,7 +10,7 @@ function listMembers() {
 
     $members = $memberManager->getMembers();
 
-    require('view/frontend/list_posts_view.php');
+    require('view/frontend/list_member_view.php');
 
 }
 

@@ -7,7 +7,11 @@ try {
             listMembers();
         } elseif ($_GET['action'] == 'addMember') {
                 if (!empty($_POST['name_member'])) {
-                    addMember(($_POST['name_member']));
+                    if (!is_numeric($_POST['name_member'])) {
+                        addMember(($_POST['name_member']));
+                    } else {
+                        throw new Exception('Ce n\'est pas un nom valide');
+                    }
                 } else {
                     // Autre Exception
                     throw new Exception('Tous les champs ne sont pas remplis !');
